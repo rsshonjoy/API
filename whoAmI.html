@@ -12,7 +12,9 @@
         .then(res => res.json())
         .then(data => {
             const user = data.results[0];
-            console.log(user.name);
+            const name = user.name;
+            const userName = `${name.title} ${name.first} ${name.last}`
+            console.log(userName);
         })
     </script>
 </body>
