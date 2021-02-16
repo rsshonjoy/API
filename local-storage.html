@@ -8,10 +8,18 @@
 </head>
 <body>
     <script>
+        const person = {
+        name: 'Joy',
+        age: 29
+        }
         // localStorage.setItem('userId', 37);
 
-        const userId = localStorage.getItem('userId')
-        console.log(userId);
+        // const userId = localStorage.getItem('userId')
+        // console.log(userId);
+        
+        localStorage.setItem('person', JSON.stringify(person));
+        const storedPerson = localStorage.getItem('person');
+        console.log(storedPerson);
         
     </script>
 </body>
