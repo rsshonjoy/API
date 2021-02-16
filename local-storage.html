@@ -21,7 +21,11 @@
         const storedPerson = localStorage.getItem('person');
         // console.log(storedPerson);
         const parsedPerson = JSON.parse(storedPerson);
-        console.log(parsedPerson.name);
+        // console.log(parsedPerson.name);
+
+        const keys = Object.keys(parsedPerson);
+        console.log(keys);
+        
         
     </script>
 </body>
