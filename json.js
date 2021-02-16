@@ -2,4 +2,7 @@ const person = {
     name: 'Joy',
     age: 29
 }
-console.log(JSON.stringify(person));
+const data = JSON.stringify(person);
+
+const dataParsed = JSON.parse(data);
+console.log(dataParsed.name);
